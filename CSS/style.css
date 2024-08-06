@@ -638,6 +638,195 @@ header .mega-menu > .mega-links > li > a i {
   color: white;
 }
 /* End Features */
+/* Start Testimonials */
+.testimonials {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+  position: relative;
+}
+.testimonials .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 55px 40px;
+}
+.testimonials .box {
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0 0 0 / 7%);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.testimonials .avatar {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  right: -10px;
+  border: 10px solid var(--section-background);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.testimonials .box h3.name {
+  margin: 0 0 10px;
+}
+.testimonials .box .title {
+  color: #777;
+  display: block;
+  margin-bottom: 10px;
+}
+.testimonials .box .rate .filled {
+  color: #ffc207;
+}
+.testimonials .box p {
+  line-height: 1.5;
+  color: var(--p-color);
+  margin: 10px 0 0;
+}
+/* End Testimonials */
+/* Start Team Members */
+.team-members {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+}
+.team-members .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.team-members .box {
+  position: relative;
+}
+
+.team-members .box::before,
+.team-members .box::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: var(--main-duration);
+  -webkit-transition: var(--main-duration);
+  -moz-transition: var(--main-duration);
+  -ms-transition: var(--main-duration);
+  -o-transition: var(--main-duration);
+}
+.team-members .box::before {
+  background-color: #f3f3f3;
+  width: calc(100% - 60px);
+  z-index: -2;
+}
+.team-members .box::after {
+  background-color: #e4e4e4;
+  width: 0;
+  z-index: -1;
+}
+
+.team-members .box:hover::after {
+  width: calc(100% - 60px);
+}
+@media (max-width:767px) {
+  .team-members .box::before {
+    width: 100%;
+  }
+  .team-members .box:hover::after {
+    width: 100%;
+  }
+}
+.team-members .box .data {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+}
+.team-members .box .data img {
+  width: calc(100% - 60px);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: var(--main-duration);
+  -webkit-transition: var(--main-duration);
+  -moz-transition: var(--main-duration);
+  -ms-transition: var(--main-duration);
+  -o-transition: var(--main-duration);
+}
+@media (max-width:767px) {
+  .team-members .box .data {
+    padding-top: 25px;
+  }
+  .team-members .box img {
+    padding-left: 60px;
+  }
+}
+.team-members .box:hover img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.team-members .box .data .social {
+  flex: 1; /* width: 60px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.team-members .box .data .social a {
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: var(--main-duration);
+  -webkit-transition: var(--main-duration);
+  -moz-transition: var(--main-duration);
+  -ms-transition: var(--main-duration);
+  -o-transition: var(--main-duration);
+  color: #777;
+}
+.team-members .box .data .social a:hover {
+  color: var(--main-color-alt);
+}
+.team-members .box .info {
+  padding-left: 80px;
+}
+@media (max-width:767px) {
+  .team-members .box .info {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+.team-members .box .info h3 {
+  color: var(--main-color);
+  margin-bottom: 0;
+  font-size: 22px;
+  transition: var(--main-duration);
+  -webkit-transition: var(--main-duration);
+  -moz-transition: var(--main-duration);
+  -ms-transition: var(--main-duration);
+  -o-transition: var(--main-duration);
+}
+.team-members .box .info p {
+  margin: 10px 0 25px;
+}
+.team-members .box:hover .info h3 {
+  color: #777;
+}
+/* End Team Members */
+
 /* Start Animations */
 @keyframes up-down {
   0%,
