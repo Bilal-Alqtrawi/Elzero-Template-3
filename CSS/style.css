@@ -691,6 +691,7 @@ header .mega-menu > .mega-links > li > a i {
   margin: 10px 0 0;
 }
 /* End Testimonials */
+<<<<<<< HEAD
 /* Start Team Members */
 .team-members {
   padding-top: var(--section-padding);
@@ -929,6 +930,8 @@ header .mega-menu > .mega-links > li > a i {
   color: var(--main-color);
 }
 /* End Services */
+=======
+>>>>>>> 1157a9481bd7999cff736c71eaae2d69965bf540
 /* Start Animations */
 @keyframes up-down {
   0%,
