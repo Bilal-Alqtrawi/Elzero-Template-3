@@ -691,7 +691,6 @@ header .mega-menu > .mega-links > li > a i {
   margin: 10px 0 0;
 }
 /* End Testimonials */
-<<<<<<< HEAD
 /* Start Team Members */
 .team-members {
   padding-top: var(--section-padding);
@@ -930,8 +929,57 @@ header .mega-menu > .mega-links > li > a i {
   color: var(--main-color);
 }
 /* End Services */
-=======
->>>>>>> 1157a9481bd7999cff736c71eaae2d69965bf540
+/* Start Skills */
+.our-skills {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+}
+.our-skills .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.our-skills img {
+  max-width: 100%;
+}
+@media (max-width: 991px) {
+  .our-skills img {
+    display: none;
+  }
+}
+.our-skills .skills {
+  flex: 1;
+}
+.our-skills .skills h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our-skills .skills h3 span {
+  color: var(--main-color);
+  font-size: 13px;
+  font-weight: normal;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 3px 5px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.our-skills .skills .prog {
+  background-color: #eee;
+  height: 30px;
+  position: relative;
+}
+.our-skills .skills .prog span {
+  background-color: var(--main-color);
+  position: absolute;
+  height: 100%;
+}
+/* End Skills */
 /* Start Animations */
 @keyframes up-down {
   0%,
